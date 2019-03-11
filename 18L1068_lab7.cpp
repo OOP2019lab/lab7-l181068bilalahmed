@@ -281,7 +281,12 @@ void deleteAccounts(bankAccount **Arr, int size){
 //	/********************************TASK 10*************************************
 //	delete all the memory you have allocate anywhere in your code using only delete or delete[] operations
 //	*/
-	
+	for (int i = 0; i< size; i++){
+		delete A[i];
+		delete Arr[i];
+	}
+	delete A;
+	delete Arr;
 //
 //
 //
